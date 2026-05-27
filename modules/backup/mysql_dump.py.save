@@ -1,0 +1,24 @@
+import subprocess
+from datetime import datetime
+from pathlib import Path
+
+def dump_database():
+    output_dir = Path("/opt/ntl-systoolbox/outputs/backups")
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    filename = output_dir / f"wms_{datetime.now().strftime('%Y%m%d_%H%M')}.sql"
+
+    cmd = [
+        "mysqldump",
+        "-h", "192.168.10.21",
+        "-u", "wmsuser",
+        "-pwmsPass",
+        "--single-transaction",
+        "--quick",
+        "wms"
+    ]
+
+    with open(filename, "w") as f:
+        subprocess.run(cmd, stdout=f, stderr=subprocess.PIPE, 
+
+    return str(filename)

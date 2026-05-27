@@ -1,0 +1,10 @@
+{
+    "timestamp": "2026-02-13T19:18:19.155243",
+    "hostname": "WMS-DB",
+    "os": "Linux-5.15.0-170-generic-x86_64-with-glibc2.35",
+    "uptime_seconds": 6083,
+    "cpu_percent": 1.2,
+    "ram_percent": 16.8,
+    "disk_percent": 44.1,
+    "status": "OK"
+}

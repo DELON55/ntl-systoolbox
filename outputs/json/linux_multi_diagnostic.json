@@ -1,0 +1,54 @@
+{
+    "timestamp": "2026-02-16T16:35:15.324381",
+    "type": "linux_multi_diagnostic",
+    "hosts": [
+        {
+            "name": "WMS-DB",
+            "ip": "192.168.10.21",
+            "result": {
+                "ip": "192.168.10.21",
+                "reachable": true,
+                "error": null,
+                "data": {
+                    "timestamp": "2026-02-16T16:35:16.638408",
+                    "hostname": "server",
+                    "os": "Linux-5.15.0-170-generic-x86_64-with-glibc2.35",
+                    "uptime_seconds": 1771221102,
+                    "cpu_percent": 0.0,
+                    "ram_percent": 76.4,
+                    "disk_percent": 34.5,
+                    "status": "OK"
+                }
+            }
+        },
+        {
+            "name": "WMS-APP",
+            "ip": "192.168.10.22",
+            "result": {
+                "ip": "192.168.10.22",
+                "reachable": true,
+                "error": null,
+                "data": {
+                    "timestamp": "2026-02-16T16:35:18.814402",
+                    "hostname": "server",
+                    "os": "Linux-5.15.0-119-generic-x86_64-with-glibc2.35",
+                    "uptime_seconds": 1771225736,
+                    "cpu_percent": 0.5,
+                    "ram_percent": 16.7,
+                    "disk_percent": 45.4,
+                    "status": "OK"
+                }
+            }
+        },
+        {
+            "name": "FILE-SRV-client_linux",
+            "ip": "192.168.10.30",
+            "result": {
+                "ip": "192.168.10.30",
+                "reachable": false,
+                "error": "[Errno None] Unable to connect to port 22 on 192.168.10.30",
+                "data": null
+            }
+        }
+    ]
+}
